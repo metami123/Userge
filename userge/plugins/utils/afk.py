@@ -70,7 +70,7 @@ async def handle_afk_incomming(message: Message) -> None:
     if user_id in USERS:
         if not (USERS[user_id][0] + USERS[user_id][1]) % randint(2, 4):
             if REASON:
-                out_str = (f"I'm still **AFK**.\nReason: <code>{REASON}</code>\n"
+                out_str = (f"I'm still **Away From Keyboard**.\nReason: <code>{REASON}</code>\n"
                            f"Last Seen: `{afk_time} ago`")
             else:
                 out_str = choice(AFK_REASONS)
@@ -81,7 +81,7 @@ async def handle_afk_incomming(message: Message) -> None:
             USERS[user_id][1] += 1
     else:
         if REASON:
-            out_str = (f"I'm **AFK** right now.\nReason: <code>{REASON}</code>\n"
+            out_str = (f"I'm **Away From Keyboard** right now.\nReason: <code>{REASON}</code>\n"
                        f"Last Seen: `{afk_time} ago`")
         else:
             out_str = choice(AFK_REASONS)
@@ -151,16 +151,16 @@ async def handle_afk_outgoing(message: Message) -> None:
 
 
 AFK_REASONS = (
-    "I'm busy right now. Please talk in a bag and when I come back you can just give me the bag!",
+    "I'm crazy busy right now. Please talk in a bag and when I come back you can just give me the bag!",
     "I'm away right now. If you need anything, leave a message after the beep: \
 `beeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeep!`",
-    "You missed me, next time aim better.",
+    "You need me? Please be patient, I'm doing something important.",
     "I'll be back in a few minutes and if I'm not...,\nwait longer.",
     "I'm not here right now, so I'm probably somewhere else.",
     "Roses are red,\nViolets are blue,\nLeave me a message,\nAnd I'll get back to you.",
-    "Sometimes the best things in life are worth waiting for…\nI'll be right back.",
+    "Sometimes the best things in life are worth waiting for…\nI'm away but will be right back.",
     "I'll be right back,\nbut if I'm not right back,\nI'll be back later.",
-    "If you haven't figured it out already,\nI'm not here.",
+    "If you don't know yet,\nI'm not here.\nBelum tahu ya, saya jauh dari HP",
     "I'm away over 7 seas and 7 countries,\n7 waters and 7 continents,\n7 mountains and 7 hills,\
 7 plains and 7 mounds,\n7 pools and 7 lakes,\n7 springs and 7 meadows,\
 7 cities and 7 neighborhoods,\n7 blocks and 7 houses...\
@@ -174,7 +174,7 @@ AFK_REASONS = (
     "I am away!\nI don't know when I'll be back!\nHopefully a few minutes from now!",
     "I'm not available right now so please leave your name, number, \
     and address and I will stalk you later. :P",
-    "Sorry, I'm not here right now.\nFeel free to talk to my userbot as long as you like.\
+    "Sorry, I'm not here right now.\nFeel free to talk to my phone bot as long as you like.\
 I'll get back to you later.",
     "I bet you were expecting an away message!",
     "Life is so short, there are so many things to do...\nI'm away doing one of them..",
