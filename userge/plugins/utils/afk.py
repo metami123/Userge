@@ -151,8 +151,8 @@ async def handle_afk_outgoing(message: Message) -> None:
 
 
 AFK_REASONS = (
-    "I'm crazy busy right now. Please talk in a bag and when I come back you can just give me the bag!",
-    "I'm away right now. If you need anything, leave a message after the beep: \
+    "I'm crazy busy right now. Please type your message and \nI will response as soon as possible!",
+    "I'm away right now. If you need anything, leave a message after the beep: \n
 `beeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeep!`",
     "You need me? Please be patient, I'm doing something important.",
     "I'll be back in a few minutes and if I'm not...,\nwait longer.",
@@ -165,15 +165,15 @@ AFK_REASONS = (
 7 plains and 7 mounds,\n7 pools and 7 lakes,\n7 springs and 7 meadows,\
 7 cities and 7 neighborhoods,\n7 blocks and 7 houses...\
     Where not even your messages can reach me!",
-    "I'm away from the keyboard at the moment, but if you'll scream loud enough at your screen,\
-    I might just hear you.",
+    "I'm away from the keyboard at the moment, but if you'll wait you will see me typing,\
+    I might just let you wait.",
+    "Saya sedang memikirkan hal lain, sabar ya, nanti saya jawab...",
     "I went that way\n>>>>>",
     "I went this way\n<<<<<",
     "Please leave a message and make me feel even more important than I already am.",
     "If I were here,\nI'd tell you where I am.\n\nBut I'm not,\nso ask me when I return...",
     "I am away!\nI don't know when I'll be back!\nHopefully a few minutes from now!",
-    "I'm not available right now so please leave your name, number, \
-    and address and I will stalk you later. :P",
+    "I'm not available right now so please leave \nyour name, number, and address \nand I will come to you later. :P",
     "Sorry, I'm not here right now.\nFeel free to talk to my phone bot as long as you like.\
 I'll get back to you later.",
     "I bet you were expecting an away message!",
